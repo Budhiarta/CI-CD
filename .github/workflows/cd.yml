@@ -52,4 +52,4 @@ jobs:
             -e "DB_NAME=${{ secrets.DB_NAME }}" \
             -e "API_PORT=${{ secrets.API_PORT }}" \
             -e "TOKEN_SECRET=${{ secrets.TOKEN_SECRET }}" \
-          -p 80:80 --name myApp rnwxyz/ci-cd:latest
+          -p 80:80 --name app rnwxyz/ci-cd:latest
