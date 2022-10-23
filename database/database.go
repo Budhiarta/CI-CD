@@ -11,7 +11,7 @@ import (
 
 func ConnectDB() (*gorm.DB, error) {
 
-	address := config.Cfg.DB_ADDRESS
+	address := config.Cfg.DB_HOST
 	user := config.Cfg.DB_USER
 	pass := config.Cfg.DB_PASSWORD
 	database := config.Cfg.DB_NAME
