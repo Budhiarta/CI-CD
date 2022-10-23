@@ -70,7 +70,7 @@ func (u *user) GetAllUsers(c echo.Context) error {
 
 func (u *user) GetHallo(c echo.Context) error {
 	return c.JSON(http.StatusOK, echo.Map{
-		"data": "Ini Hallo",
+		"data": "Ini Hallo Seletah Update",
 	})
 }
 
