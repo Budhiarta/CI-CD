@@ -1,0 +1,21 @@
+services:
+
+  db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: alta
+    ports: 
+      - 3306:3306
+    volumes:
+      # - './data:/bitnami/mysql/data'
+      - './initdb:/docker-entrypoint-initdb.d'
+
+  app:
+    build: .
+    restart: always
+    depends_on:
+      - db
+    ports:
+      - 8000:8000

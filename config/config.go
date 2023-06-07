@@ -18,10 +18,10 @@ func InitConfig() {
 
 	cfg.API_PORT = SetEnv("API_PORT", ":8000")
 	cfg.TOKEN_SECRET = SetEnv("TOKEN_SECRET", "ADsf78saAA")
-	cfg.DB_HOST = SetEnv("DB_HOST", "mysql-mysql-1:3306")
+	cfg.DB_HOST = SetEnv("DB_HOST", "db:3306")
 	cfg.DB_USER = SetEnv("DB_USER", "root")
 	cfg.DB_PASSWORD = SetEnv("DB_PASSWORD", "root")
-	cfg.DB_NAME = SetEnv("DB_NAME", "praktikum")
+	cfg.DB_NAME = SetEnv("DB_NAME", "alta")
 
 	Cfg = cfg
 }
