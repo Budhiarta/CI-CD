@@ -20,7 +20,7 @@ func InitConfig() {
 	cfg.TOKEN_SECRET = SetEnv("TOKEN_SECRET", "ADsf78saAA")
 	cfg.DB_HOST = SetEnv("DB_HOST", "mysql-mysql-1:3306")
 	cfg.DB_USER = SetEnv("DB_USER", "root")
-	cfg.DB_PASSWORD = SetEnv("DB_PASSWORD", "root123")
+	cfg.DB_PASSWORD = SetEnv("DB_PASSWORD", "root")
 	cfg.DB_NAME = SetEnv("DB_NAME", "praktikum")
 
 	Cfg = cfg

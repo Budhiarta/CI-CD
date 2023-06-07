@@ -41,8 +41,8 @@ func (s *suiteUser) TestGetAllUsers() {
 			ExpectedStatusCode: http.StatusOK,
 			ExpectedBody: []model.User{
 				{
-					Email:    "rian@gmail.com",
-					Password: "rian",
+					Email:    "budhi@gmail.com",
+					Password: "budhi",
 				},
 			},
 			ExpectedErr: false,
@@ -61,8 +61,8 @@ func (s *suiteUser) TestGetAllUsers() {
 			if !v.ExpectedErr {
 				mockCall.Return([]model.User{
 					{
-						Email:    "rian@gmail.com",
-						Password: "rian",
+						Email:    "budhi@gmail.com",
+						Password: "budhi",
 					},
 				}, nil)
 			} else {
