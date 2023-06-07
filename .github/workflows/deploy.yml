@@ -5,6 +5,7 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
+    environment: deploy
     steps:
     - name: pull-deploy
       uses: appleboy/ssh-action@master
